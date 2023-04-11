@@ -1,0 +1,15 @@
+<script>
+  function initFreshChat() {
+    window.fcWidget.init({
+      	 token: "6b516bcd-68ec-4181-a1bd-397e482b2e72",
+	 host: "https://staging-hema.freshpori.com",
+	 widgetUuid: "5f434d50-fa15-42da-8678-38033a02d4ef"
+    });
+  }
+  function initialize(i,t){var e;i.getElementById(t)?
+  initFreshChat():((e=i.createElement("script")).id=t,e.async=!0,
+  e.src="https://staging-hema.freshpori.com/js/widget.js",e.onload=initFreshChat,i.head.appendChild(e))}
+  function initiateCall(){initialize(document,"Freshchat-js-sdk")}
+  window.addEventListener?window.addEventListener("load",initiateCall,!1):
+  window.attachEvent("load",initiateCall,!1);
+</script>
